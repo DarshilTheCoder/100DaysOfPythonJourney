@@ -1,0 +1,4 @@
+"API KEY" : "7d1f89c2d5c5afb489eafb69b4f52d21"
+
+#Ignore .env files
+.env
