@@ -40,7 +40,7 @@ if today in birthday_dict:
             new_letter = letter_content.replace(PLACEHOLDER,birthday_person['Name'])
             # Setup Server config
             server_host = "smtp.gmail.com"
-            server_port = 587
+            server_port = 
 
             # #Setup Gmail credentials
             my_email = "darshil.coder350@gmail.com"
