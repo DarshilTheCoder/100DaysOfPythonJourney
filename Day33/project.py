@@ -48,7 +48,7 @@ def check_night():
     
     
 my_email = "darshil.coder350@gmail.com"
-my_password = "werc vutc xdxz wrkv"
+my_password = ""
 
 while True:
     time.sleep(60)
