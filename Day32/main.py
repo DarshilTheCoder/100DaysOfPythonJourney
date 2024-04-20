@@ -8,8 +8,8 @@ smtp_port = 587
 
 #My gmail Credentials
 my_email = "darshil.20becev124@gmail.com"
-my_password = "ekch aqss ztfq lbiq"
-my_password2 = "werc vutc xdxz wrkv" #for darshil.coder350@gmail.com
+my_password = ""
+my_password2 = "" #for darshil.coder350@gmail.com
 
 #Sender and Receiver Email Address
 receiver = "darshil.coder350@gmail.com"
