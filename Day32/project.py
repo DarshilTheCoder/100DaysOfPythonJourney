@@ -44,7 +44,7 @@ if today in birthday_dict:
 
             # #Setup Gmail credentials
             my_email = "darshil.coder350@gmail.com"
-            my_password = "werc vutc xdxz wrkv"
+            my_password = "your password"
 
             # #Sender and receiver email
             sender = "darshil.coder350@gmail.com"
