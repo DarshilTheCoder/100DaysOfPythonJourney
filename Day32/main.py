@@ -4,7 +4,7 @@ from email.mime.text import MIMEText
 
 #Setup SMTP Serer 
 smtp_server= "smtp.gmail.com"
-smtp_port = 587
+smtp_port = 
 
 #My gmail Credentials
 my_email = "darshil.20becev124@gmail.com"
