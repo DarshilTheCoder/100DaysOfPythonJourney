@@ -10,7 +10,7 @@ server_port = 587
 
 # #Setup Gmail credentials
 my_email = "darshil.coder350@gmail.com"
-my_password = "werc vutc xdxz wrkv"
+my_password = ""
 
 # #Sender and receiver email
 sender = "darshil.coder350@gmail.com"
