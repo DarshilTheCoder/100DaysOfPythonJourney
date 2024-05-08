@@ -11,6 +11,7 @@ COMPANY_NAME = "Tesla"
 today_date = datetime.now().date()
 yesterday_date = today_date - timedelta(days=1)
 day_before_yesterday_date = today_date - timedelta(days=2)
+today_day = today_date.weekday()
 yesterday_day = yesterday_date.weekday()
 day_before_yesterday_day = day_before_yesterday_date.weekday()
 
@@ -46,9 +47,12 @@ def formatted_articles(three_articles):
     return [f"Heading : {articles['title']}\n Brief:{articles['description']}" for articles in three_articles]
 
 
-if yesterday_day ==5 or yesterday_day==6:
+if today_day ==5 or today_day==6:
     print('Stock Market is CLOSED !! Please come on Monday to buy or sell stocks')
 else:
+    if today_day == 0 or today_day == 1:
+        yesterday_date = today_date - timedelta(days=3)
+        day_before_yesterday_date = today_date - timedelta(days=4)
     data = getting_stock_data(parameters = parameters, STOCK_ENDPOINT = STOCK_ENDPOINT)
     yesterday_stock_price = float(data["Time Series (Daily)"][str(yesterday_date)]['4. close'])
     day_before_yesterday_stock_price = float(data["Time Series (Daily)"][str(day_before_yesterday_date)]['4. close']) 
@@ -63,7 +67,7 @@ else:
         up_down = "🔽"
         
 
-    if abs(percentage_change)>5:
+    if abs(percentage_change)>=5:
         articles = getting_news_data(news_parameters = news_parameters, NEWS_ENDPOINT = NEWS_ENDPOINT)
         three_articles = articles[:3]
         formate_articles = formatted_articles(three_articles)
